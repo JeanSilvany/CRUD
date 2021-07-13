@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <main class="main">
+    <header class="header">Cadastro de Clientes</header>
+    <section class="section">
+      <button type="button" class="btnClientOpen">Cadastrar Cliente</button>
+      <table class="table">
+        <div class="modal active" id="modal">
+           
+                </footer>
+            </div>
+        <thead class="tableHead">
+          <tr>
+            <td>Nome</td>
+            <td>E-mail</td>
+            <td>Celular</td>
+            <td>Cidade</td>
+            <td class="endTable">Ação</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jean</td>
+            <td>jeansilvany@hotmail.com</td>
+            <td>71996793069</td>
+            <td>Salvador</td>
+            <td class="endTable">
+              <button type="button" class="btnEdit">Editar</button>
+              <button type="button" class="btnDelete">Deletar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Ibrahim</td>
+            <td>ibradajani121@gmail.com</td>
+            <td>71998975488</td>
+            <td>Salvador</td>
+            <td class="endTable">
+              <button type="button" class="btnEdit">Editar</button>
+              <button type="button" class="btnDelete">Deletar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>André Krauss</td>
+            <td>andrekrauss@hotmail.com</td>
+            <td>47989435467</td>
+            <td>Belo Horizonte</td>
+            <td class="endTable">
+              <button type="button" class="btnEdit">Editar</button>
+              <button type="button" class="btnDelete">Deletar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="modal">
+        <header class="modalHeader">
+          <h2>Novo Cliente</h2>
+        </header>
+        <form class="modalForm">
+          <div class="stBox">
+            <input
+              class="modalContent"
+              type="text"
+              id="text"
+              placeholder="Nome do Cliente"
+              required
+            />
+            <input
+              class="modalContent"
+              type="email"
+              id="email"
+              placeholder="E-mail do Cliente"
+              required
+            />
+          </div>
+          <div class="ndBox">
+            <input
+              class="modalContent"
+              type="text"
+              id="celular"
+              placeholder="Celular do Cliente"
+              required
+            />
+            <input
+              class="modalContent"
+              type="text"
+              id="cidade"
+              placeholder="Cidade do Cliente"
+              required
+            />
+          </div>
+        </form>
+        <footer class="modalFooter">
+            <div></div>
+            
+          <div>
+              <button type="button" class="btnSave">Salvar</button>
+              <button type="button" class="btnCancel">Cancelar</button>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <footer class="footer">Jean Technologies</footer>
+  </main>
+
+  <body>
+    <script src="javascript.js"></script>
+  </body>
+</html>
